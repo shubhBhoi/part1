@@ -7,12 +7,13 @@ import Total from "./Total"
 
 const App = (props) => {
 
-
+  const year = new Date().getFullYear() 
   return (
     <div>
       <Header course={course.name} />
       <Content parts={course. parts}/>
       <Total parts={course.parts} />
+      <footer>© {year}</footer>
     </div>
   )
 }
